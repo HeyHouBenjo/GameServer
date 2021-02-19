@@ -1,4 +1,4 @@
-﻿namespace BasicServer.Management {
+﻿namespace GameServer.Management {
     public static class Constants {
         public const int TicksPerSec = 64;
         public const int MsPerTick = 1000 / TicksPerSec;

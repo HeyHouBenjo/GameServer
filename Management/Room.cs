@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using BasicServer.Game;
+using GameServer.Game;
 
-namespace BasicServer.Management {
+namespace GameServer.Management {
     public class Room {
 
         public class ClientProperties { 

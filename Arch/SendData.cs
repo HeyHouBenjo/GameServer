@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using BasicServer.Management;
+using GameServer.Management;
 
-namespace BasicServer.Arch {
+namespace GameServer.Arch {
     public static class SendData {
         public static void SendTcpData(int toClient, Packet packet) {
             packet.WriteLength();

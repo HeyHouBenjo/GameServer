@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using BasicServer.Arch;
-using BasicServer.Management;
-using BasicServer.PacketTypes;
+using GameServer.Arch;
 using GameServer.Management;
+using GameServer.PacketTypes;
 
-namespace BasicServer {
+namespace GameServer {
 
     internal static class Server {
         public delegate void PacketHandler(int fromClient, Packet packet);

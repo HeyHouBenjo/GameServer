@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
-using BasicServer.Management;
+using GameServer.Management;
 
-namespace BasicServer.Arch {
+namespace GameServer.Arch {
     public sealed class Packet : IDisposable {
         private List<byte> _buffer;
 

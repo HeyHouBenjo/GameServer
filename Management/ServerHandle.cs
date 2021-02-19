@@ -1,8 +1,8 @@
 ﻿using System;
-using BasicServer.Arch;
-using BasicServer.Management;
+using GameServer.Arch;
+using GameServer.Management;
 
-namespace BasicServer {
+namespace GameServer {
     public static class ServerHandle {
 
         public static void WelcomeReceived(int fromClientId, Packet packet) {

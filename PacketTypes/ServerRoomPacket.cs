@@ -1,4 +1,4 @@
-﻿namespace BasicServer.PacketTypes {
+﻿namespace GameServer.PacketTypes {
     public enum ServerRoomPacket {
         RList = 1,
         RCreated,

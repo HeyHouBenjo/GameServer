@@ -1,10 +1,10 @@
 ﻿using System;
-using BasicServer.Arch;
-using BasicServer.PacketTypes;
-using static BasicServer.Arch.SendData;
-using static BasicServer.PacketTypes.ServerRoomPacket;
+using GameServer.Arch;
+using GameServer.PacketTypes;
+using static GameServer.Arch.SendData;
+using static GameServer.PacketTypes.ServerRoomPacket;
 
-namespace BasicServer.Management {
+namespace GameServer.Management {
     public static class RoomSend {
         private static Packet CreatePacket(ServerRoomPacket type) {
             return new((int)PacketType.Room, (int)type);

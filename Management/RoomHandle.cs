@@ -1,7 +1,7 @@
 ﻿using System;
-using BasicServer;
-using BasicServer.Arch;
-using BasicServer.Management;
+using GameServer;
+using GameServer.Arch;
+using GameServer.Management;
 
 namespace GameServer.Management {
     public static class RoomHandle {

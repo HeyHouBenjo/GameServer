@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
-using BasicServer.Game;
-using BasicServer.Management;
+using GameServer.Game;
+using GameServer.Management;
 
-namespace BasicServer.Arch {
+namespace GameServer.Arch {
     
     internal static class ThreadManager {
         private static readonly List<Action> ToExecuteOnMainThread = new();

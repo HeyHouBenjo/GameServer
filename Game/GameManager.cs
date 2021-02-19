@@ -1,6 +1,6 @@
-﻿using BasicServer.Management;
+﻿using GameServer.Management;
 
-namespace BasicServer.Game {
+namespace GameServer.Game {
     public class GameManager {
 
         private Room Room { get; }

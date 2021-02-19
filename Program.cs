@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using BasicServer.Arch;
+using GameServer.Arch;
 
-namespace BasicServer {
+namespace GameServer {
     internal static class Program {
         private static void Main() {
             Console.Title = "Game Server";
