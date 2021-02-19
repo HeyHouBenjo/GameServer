@@ -1,4 +1,4 @@
-﻿namespace GameServer.Game {
+﻿namespace BasicServer.Game {
     public class Player {
 
         public int Id { get; }

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace GameServer.Arch {
+namespace BasicServer.Arch {
     
     public class DatePrefix : TextWriter {
         

@@ -1,31 +1,25 @@
-﻿using System.Collections.Generic;
-using GameServer.Management;
+﻿using BasicServer.Management;
 
-namespace GameServer.Game {
+namespace BasicServer.Game {
     public class GameManager {
 
-        public bool IsRunning { get; set; }
-        
         private Room Room { get; }
-        private Dictionary<int, Player> Players { get; } = new();
+
+        private bool IsStarted { get; set; }
 
         public GameManager(Room room) {
             Room = room;
-            foreach (var client in room.Clients) {
-                Players.Add(client.Id, new Player(client.Id, client.Name));
-            }
         }
 
         public void Start() {
-            foreach (var player in Players.Values) {
-                player.Start();
-            }
+            IsStarted = true;
         }
 
         public void Update() {
-            foreach (var player in Players.Values) {
-                player.Update();
-            }
+            if (!IsStarted)
+                return;
+            
+            
         }
 
     }

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using GameServer.Arch;
-using GameServer.Game;
-using GameServer.PacketTypes;
+using BasicServer.Arch;
+using BasicServer.Management;
+using BasicServer.PacketTypes;
+using GameServer.Management;
 
-namespace GameServer.Management {
+namespace BasicServer {
 
     internal static class Server {
         public delegate void PacketHandler(int fromClient, Packet packet);
@@ -47,9 +48,6 @@ namespace GameServer.Management {
                     {(int)ClientRoomPacket.RReady, RoomHandle.RoomReady},
                     {(int)ClientRoomPacket.RColor, RoomHandle.RoomColor},
                     {(int)ClientRoomPacket.RStart, RoomHandle.RoomStart},
-                }},
-                {(int)PacketType.Game, new Dictionary<int, PacketHandler> {
-                    {(int)ClientGamePacket.Action, GameHandle.Action}
                 }}
             };
             

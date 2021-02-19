@@ -1,7 +1,7 @@
-﻿using GameServer.Arch;
-using GameServer.PacketTypes;
-using static GameServer.Arch.SendData;
-using static GameServer.PacketTypes.ServerDefaultPacket;
+﻿using BasicServer.Arch;
+using BasicServer.PacketTypes;
+using static BasicServer.Arch.SendData;
+using static BasicServer.PacketTypes.ServerDefaultPacket;
 
 namespace GameServer.Management {
     internal static class ServerSend {

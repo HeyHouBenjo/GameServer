@@ -1,8 +1,9 @@
 ﻿using System;
-using GameServer.Arch;
-using GameServer.Game;
+using BasicServer.Arch;
+using BasicServer.Game;
+using GameServer.Management;
 
-namespace GameServer.Management {
+namespace BasicServer.Management {
     public class Client {
 
         public readonly int Id;

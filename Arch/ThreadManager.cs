@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
-using GameServer.Management;
+using BasicServer.Game;
+using BasicServer.Management;
 
-namespace GameServer.Arch {
+namespace BasicServer.Arch {
     
     internal static class ThreadManager {
         private static readonly List<Action> ToExecuteOnMainThread = new();
@@ -46,6 +46,8 @@ namespace GameServer.Arch {
         public static void MainThread() {
             Console.WriteLine($"Main thread started. Running at {Constants.TicksPerSec} ticks per second.");
             var nextLoop = DateTime.Now;
+            
+            Server.Start(50, 26950);
 
             while (IsRunning)
             while (nextLoop < DateTime.Now) {
@@ -59,8 +61,8 @@ namespace GameServer.Arch {
         }
 
         private static void Tick() {
-            foreach (var room in Server.Rooms.Values.Where(room => room.Game != null && room.Game.IsRunning)) {
-                room.Game.Update();
+            foreach (var room in Server.Rooms.Values) {
+                room.Game?.Update();
             }
             
             UpdateMain();

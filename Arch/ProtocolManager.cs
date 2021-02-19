@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
-using GameServer.Management;
+using BasicServer.Management;
 
-namespace GameServer.Arch {
+namespace BasicServer.Arch {
 
     public static class Listener {
         private static TcpListener _tcpListener;

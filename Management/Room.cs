@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using GameServer.Game;
+using BasicServer.Game;
 
-namespace GameServer.Management {
+namespace BasicServer.Management {
     public class Room {
 
         public class ClientProperties { 
@@ -25,7 +25,6 @@ namespace GameServer.Management {
 
         public void StartGame() {
             Game = new GameManager(this);
-            Game.Start();
         }
         
         public readonly Dictionary<int, ClientProperties> ClientPropertiesMap = new();
