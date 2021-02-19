@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using GameServer.Game;
 using GameServer.Management;
@@ -59,8 +60,8 @@ namespace GameServer.Arch {
         }
 
         private static void Tick() {
-            foreach (var room in Server.Rooms.Values) {
-                room.Game?.Update();
+            foreach (var room in Server.Rooms.Values.Where(room => room.Game != null && room.Game.IsRunning)) {
+                room.Game.Update();
             }
             
             UpdateMain();
