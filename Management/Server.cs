@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using GameServer.Arch;
-using GameServer.Management;
 using GameServer.PacketTypes;
 
-namespace GameServer {
+namespace GameServer.Management {
 
     internal static class Server {
         public delegate void PacketHandler(int fromClient, Packet packet);

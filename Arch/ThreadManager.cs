@@ -46,8 +46,6 @@ namespace GameServer.Arch {
         public static void MainThread() {
             Console.WriteLine($"Main thread started. Running at {Constants.TicksPerSec} ticks per second.");
             var nextLoop = DateTime.Now;
-            
-            Server.Start(50, 26950);
 
             while (IsRunning)
             while (nextLoop < DateTime.Now) {
