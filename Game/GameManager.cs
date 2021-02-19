@@ -8,7 +8,7 @@ namespace GameServer.Game {
 
         private Dictionary<int, Player> Players { get; } = new();
         
-        public bool IsRunning { get; set; }
+        public bool IsRunning { get; private set; }
 
         public GameManager(Room room) {
             Room = room;
